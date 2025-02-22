@@ -215,12 +215,3 @@ Keyword arguments (kwargs): {'isim': 'Ali', 'yas': 30}
 
 Bu örnekte, `*args` ile 1, 2 ve 3 konumlu argüman olarak alınırken, `**kwargs` ile "isim" ve "yas" anahtar-değer çiftleri alınır.
 
-### Özet
-
-- **`*args`**: Değişken sayıda konumlu argüman alır ve bir tuple içinde saklar.
-- **`**kwargs`**: Değişken sayıda anahtar-değer çifti alır ve bir dictionary içinde saklar.
-
-Bu kavramlar, fonksiyonlara daha esnek bir yapı kazandırarak, dinamik ve esnek kod yazmayı sağlar.
-### Özet
-
-Python'da denetim yapıları, döngüler ve fonksiyonlar, programın akışını yönetmek, tekrar eden işlemleri gerçekleştirmek ve kodu daha modüler hale getirmek için kullanılır. Denetim yapıları koşullara göre farklı kod bloklarını çalıştırırken, döngüler belirli işlemleri tekrarlar. Fonksiyonlar ise kodun daha düzenli ve yeniden kullanılabilir olmasını sağlar.
