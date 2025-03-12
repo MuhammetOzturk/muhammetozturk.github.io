@@ -1,33 +1,53 @@
 <!-- Navigation buttons at the bottom of the post. -->
+{% assign sorted_posts = site.posts | sort: 'weight' | reverse %}  <!-- Tüm yazıları weight'e göre sırala -->
+{% assign current_index = nil %}
+
+{% for post in sorted_posts %}
+  {% if post.url == page.url %}
+    {% assign current_index = forloop.index0 %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if current_index %}
+  {% assign newer_post_index = current_index | minus: 1 %}
+  {% assign older_post_index = current_index | plus: 1 %}
+{% endif %}
+
 
 <nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
   {% assign previous = site.data.locales[include.lang].post.button.previous %}
   {% assign next = site.data.locales[include.lang].post.button.next %}
 
-  {% if page.previous.url %}
+
+  {% if older_post_index < sorted_posts.size %}
+    {% assign older_post = sorted_posts[older_post_index] %}
     <a
-      href="{{ site.baseurl }}{{ page.previous.url }}"
+      href="{{ older_post.url }}"
       class="btn btn-outline-primary"
-      aria-label="{{ previous }}"
+      aria-label="{{ next }}"
     >
-      <p>{{ page.previous.title }}</p>
+      <p>{{ older_post.title }}</p>
     </a>
   {% else %}
-    <div class="btn btn-outline-primary disabled" aria-label="{{ previous }}">
+    <div class="btn btn-outline-primary disabled" aria-label="{{ next }}">
       <p>-</p>
     </div>
   {% endif %}
 
-  {% if page.next.url %}
+
+
+  {% if newer_post_index >= 0 %}
+    {% assign newer_post = sorted_posts[newer_post_index] %}
     <a
-      href="{{ site.baseurl }}{{page.next.url}}"
+      href="{{ newer_post.url}}"
       class="btn btn-outline-primary"
-      aria-label="{{ next }}"
+      aria-label="{{ previous }}"
     >
-      <p>{{ page.next.title }}</p>
+      <p>{{ newer_post.title }}</p>
     </a>
   {% else %}
-    <div class="btn btn-outline-primary disabled" aria-label="{{ next }}">
+    <div class="btn btn-outline-primary disabled" aria-label="{{ previous }}">
       <p>-</p>
     </div>
   {% endif %}
