@@ -233,4 +233,5 @@ jekyll-archives:
     category: /categories/:name/
 
 
-
+plugins:
+  - jemoji
