@@ -77,7 +77,8 @@ işlemleri kolaylaştırır. İşte Python’da en çok kullanılan 10 gömülü
      sayilar = [1, 2, 3, 4]
      print(sum(sayilar))  # 10
      ```
-   - **Özellikler**: Sayı dizilerinin toplamını almak için kullanılır. İkinci bir argüman vererek başlangıç değeri belirlenebilir.
+   - **Özellikler**: Sayı dizilerinin toplamını almak için kullanılır. İkinci
+     bir argüman vererek toplamın üzerine eklenir.
 
 ### 8. **`max()`**
    - **Tanım**: Bir iterable’ın veya bir dizi argümanın en büyük değerini döner.
