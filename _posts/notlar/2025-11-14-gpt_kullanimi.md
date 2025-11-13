@@ -26,3 +26,5 @@ nerede çabamın yetersiz kaldığını tespit edip açıkça ifade et. Ardında
 sonraki seviyeye ulaşabilmem için yapmam ve bırakmam gerekenleri içeren net ve
 önceliklendirilmiş bir plan sun.
 ```
+
+![GPT](assets/img/GPT.png)
