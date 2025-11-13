@@ -27,4 +27,4 @@ sonraki seviyeye ulaşabilmem için yapmam ve bırakmam gerekenleri içeren net 
 önceliklendirilmiş bir plan sun.
 ```
 
-![GPT](assets/img/GPT.png)
+![GPT](/assets/img/GPT.png)
