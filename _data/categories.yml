@@ -1,0 +1,20 @@
+- id: matematik
+  title: Matematik
+  icon: fa-calculator
+  description: Lineer cebir, matrisler, vektör uzayları ve sayılar teorisi
+  dir: matematik
+  link: /categories/liner-cebir/
+
+- id: yapay-zeka
+  title: Yapay Zeka & MLOps
+  icon: fa-brain
+  description: Makine öğrenmesi, derin öğrenme, GPT, Colab ve görüntü işleme
+  dir: yapay-zeka
+  link: /yapay-zeka/
+
+- id: python
+  title: Python
+  icon: fa-code
+  description: Temel Python, veri yapıları, nesne yönelimli programlama ve ileri konular
+  dir: python
+  link: /categories/python/
