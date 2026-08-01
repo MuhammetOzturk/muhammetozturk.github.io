@@ -1,0 +1,13 @@
+---
+---
+
+/* prettier-ignore */
+$theme: '' !default;
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
